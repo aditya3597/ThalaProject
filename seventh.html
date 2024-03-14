@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="decorationBox">
+      <p id="welcomeNote">Welcome to thala finder</p>
+    <label for="myInput">Enter a number</label>
+    <input id="myInput" type="text" required />
+    <button id="myButton" onclick="thalaReason()">Click me!!</button>
+    <input type="reset" id="resetbtn" onclick="location.reload()" />
+
+    <marquee behavior="alternate" direction="left" bgcolor="coral">
+    <p id="newResult"></p>
+    </marquee>
+    <div id="myvideo"></div>
+    <div id="myvideo2"></div>
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      
+    }
+    .decorationBox {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      color: black;
+      background-color: bisque;
+      padding: 10px;
+      border: 10px solid black;
+    }
+    
+    #welcomeNote{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        width: fit-content;
+        height: fit-content;
+    }
+    #newResult{
+      text-align: center;
+      text-decoration: wavy;
+      background-color: coral;
+    }
+   
+  </style>
+  <script>
+
+    function thalaReason() {
+      var inputElement = document.getElementById("myInput");
+      var buttonElement = document.getElementById("myButton");
+      var badWords = ["PORNHUB", "pornhub"];
+      console.log(badWords);
+
+      var inputValue = inputElement.value;
+      var inputNumber = parseFloat(inputValue);
+      
+      if(inputValue === "pornhub"){
+        console.log("Bhag ja yha se ");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' Bhag ja yha se ';
+
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'modi_BKL.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      } else
+      if(inputValue === "PORNHUB"){
+        console.log("Bhag ja yha se ");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' Bhag ja yha se ';
+
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'modi_BKL.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      } else
+      if(inputNumber == 7){
+        console.log("thala for a reason");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' Thala For a Reason ';
+        
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'thala.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      }
+      else if (inputValue.length == 7) {
+        console.log("thala for a reason");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' Thala For a Reason ';
+
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'thala.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      }
+      else if(inputNumber == 18){
+        console.log("Raja Kohli");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' K I N G ~ K O H L I ';
+
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'raja_kohli.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      } else if(inputValue.length == 18){
+        console.log("Raja Kohli");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' K I N G ~ K O H L I ';
+
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'raja_kohli.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      }
+      else{
+        console.log(" thala for no reason ");
+        var resultElement = document.getElementById('newResult');
+        resultElement.textContent = ' Thala for no reason ';
+
+        var thalaVideo = document.getElementById('myvideo');
+        var videoElement = document.createElement('video');
+        var sourceElement= document.createElement('source');
+        sourceElement.src = 'AMMA_BEHAN.mp4';
+        sourceElement.type = 'video/mp4';
+        videoElement.appendChild(sourceElement);
+        videoElement.width = 320;
+        videoElement.height = 340;
+        videoElement.autoplay = true;
+        videoElement.controls = true;
+        videoElement.loop = true;
+        
+        thalaVideo.appendChild(videoElement);
+      }
+    }
+  </script>
+</html>
